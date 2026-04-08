@@ -1,0 +1,97 @@
+body {
+
+}
+
+.cap {
+    background-image: url(../img/bcn.jpg);
+    background-size: cover;
+    margin: 0;
+    height: 300px;
+    width: 100vw;
+}
+
+.contingut {
+    background-color: #fffAEB;
+    border-radius: 50px 50px 0 0;
+    margin-top: -80px;
+    width: 100vw;
+}
+
+.bienvenida {
+    width: 200px;
+    height: 100px;
+    background: red;
+    margin: 20px 20px;
+}
+
+.barra {
+    height: 110px;
+    width: 100vw;
+    background-image: url(../img/fondmenu-perfil.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.barra ul {
+    margin: 0;
+    padding: 0;
+}
+
+.barra li {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    float: left;
+    margin: 0;
+    list-style-type: none;
+}
+
+.home {
+    background-image: url(../img/home-blanc.png);
+    position: relative;
+    top: 46px;
+    left: 40px;
+}
+
+.grups {
+    background-image: url(../img/grups-groc.png);
+    position: relative;
+    top: 46px;
+    left: 50px;
+}
+
+.pannot {
+    background-image: url(../img/pannot-groc.png);
+    position: relative;
+    top: 18px!important;
+    left: 84px;
+    height: 92px!important;
+    width: 92px!important;
+}
+
+.recursos {
+    background-image: url(../img/recursos-groc.png);
+    position: relative;
+    top: 46px;
+    left: 119px;
+}
+
+.perfil {
+    background-image: url(../img/perfil-groc.png);
+    position: relative;
+    top: 43px;
+    left: 128px;
+}
+
+.camiseta
+
+.pantalon
+
+.zapato
+
+#pol .zapato
+
+#tolga .camiseta
