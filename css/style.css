@@ -1,5 +1,5 @@
 body {
-
+    margin: 0,
 }
 
 .cap {
@@ -27,7 +27,7 @@ body {
 .barra {
     height: 110px;
     width: 100vw;
-    background-image: url(../img/fondmenu-perfil.png);
+    background-image: url(../img/fondmenu-home.png);
     background-size: cover;
     position: fixed;
     bottom: 0;
@@ -49,6 +49,12 @@ body {
     list-style-type: none;
 }
 
+.barra li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .home {
     background-image: url(../img/home-blanc.png);
     position: relative;
@@ -64,7 +70,7 @@ body {
 }
 
 .pannot {
-    background-image: url(../img/pannot-groc.png);
+    background-image: url(../img/panot-groc.png);
     position: relative;
     top: 18px!important;
     left: 84px;
@@ -86,12 +92,29 @@ body {
     left: 128px;
 }
 
-.camiseta
+/* PAGINA 2 - GRUPS*/
 
-.pantalon
+#pg2grups .barra {
+    height: 110px;
+    width: 100vw;
+    background-image: url(../img/fondmenu-grups.png);
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
-.zapato
+#pg2grups .home {
+    background-image: url(../img/home-groc.png);
+    position: relative;
+    top: 46px;
+    left: 40px;
+}
 
-#pol .zapato
-
-#tolga .camiseta
+#pg2grups .grups {
+    background-image: url(../img/grups-blanc.png);
+    position: relative;
+    top: 46px;
+    left: 50px;
+}
