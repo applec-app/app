@@ -80,7 +80,7 @@ body {
 .pannot {
     background-image: url(../img/panot-groc.png);
     top: 18px !important;
-    left: 10%;
+    left: 9.8%;
     height: 92px !important;
     width: 23vw !important; /* Más ancho por ser el central */
 }
