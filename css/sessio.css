@@ -1,3 +1,29 @@
+/* TIPOGRAFÍAS */
+
+@font-face {
+    font-family: 'Kepler';
+    src: url('../fonts/KeplerStdBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSans-Bold';
+    src: url('../fonts/SourceSans3-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSans-Regular';
+    src: url('../fonts/SourceSans3-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +32,7 @@
 
 body {
     background-color: #FFFAEA;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'SourceSans-Regular', sans-serif;
     height: 100vh;
     overflow: hidden;
 }
@@ -30,7 +56,8 @@ body {
     display: flex;
 }
 
-/* --- LOGOS Y TÍTULOS GENERALES --- */
+/* LOGOS Y TÍTULOS GENERALES */
+
 .logo {
     width: 165px;
     height: 165px;
@@ -49,10 +76,10 @@ body {
 }
 
 .main-title {
-    font-size: 60px;
+    font-size: 62px;
     color: #EC001B;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
-    font-family: 'Times New Roman', serif;
+    font-family: 'Kepler';
     margin-top: 15px;
     text-align: center;
 }
@@ -61,14 +88,14 @@ body {
     font-size: 20px;
     color: #630100;
     font-weight: 300;
-    font-family: Arial, sans-serif;
+    font-family: 'SourceSans-Regular', sans-serif;
     text-align: center;
     margin-top: 180px;
     line-height: 1.2;
 }
 
 .form-title-serif {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Kepler';
     font-weight: bold;
     font-size: 58px;
     color: #000;
@@ -77,7 +104,8 @@ body {
     text-transform: uppercase;
 }
 
-/* --- FORMULARIOS --- */
+/*  FORMULARIOS */
+
 .custom-form {
     width: 100%;
     max-width: 380px;
@@ -92,7 +120,7 @@ body {
 }
 
 .input-group label {
-    font-family: Arial, sans-serif;
+    font-family: 'SourceSans-Regular', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #333;
@@ -112,12 +140,13 @@ body {
     outline: none;
 }
 
-/* --- BOTONES GENERALES --- */
+/* BOTONES GENERALES */
+
 .btn {
     background-color: #F5C143;
     color: #FFFFFF;
-    font-size: 28px;
-    font-family: 'Times New Roman', serif;
+    font-size: 26px;
+    font-family: 'SourceSans-Bold', sans-serif;
     border: none;
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -270,7 +299,7 @@ body {
 .btn-role {
     background-color: #F5C143;
     color: #FFFFFF;
-    font-family: 'Times New Roman', serif;
+    font-family: 'SourceSans-Bold', sans-serif;
     font-weight: bold;
     border: none;
     border-radius: 15px;
