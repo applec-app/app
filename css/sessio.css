@@ -9,6 +9,14 @@
 }
 
 @font-face {
+    font-family: 'Kepler';
+    src: url('../fonts/KeplerStdRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'SourceSans-Bold';
     src: url('../fonts/SourceSans3-Bold.woff') format('woff');
     font-weight: bold;
