@@ -4,6 +4,11 @@ body {
     overflow-x: hidden;
 }
 
+* {
+    position: relative;
+}
+
+
 /* PAGINA 1 - HOME */
 
 .cap {
@@ -34,7 +39,7 @@ body {
 
 .barra {
     width: 100vw;
-    height: 110px;
+    height: 22.8vw;
     background-image: url(../img/fondmenu-home.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; /* Forzamos que el fondo ocupe todo el ancho */
@@ -45,58 +50,59 @@ body {
 }
 
 .barra ul {
-    margin: 0;
+    width: 90.2vw;
+    margin: 0 auto;
     padding: 0;
     list-style-type: none;
+    top: 7vw;
 }
 
 .barra li {
-    width: 15vw; /* Medida responsiva para el ancho del icono */
-    height: 60px;
+    width: 14.15vw;
+    height: 14.15vw;
+    margin: 1vw;
     background-size: contain;
     background-repeat: no-repeat;
     float: left;
-    position: relative;
 }
 
 .barra li a {
+    width: 14.15vw;
+    height: 14.15vw;
     display: block;
-    width: 100%;
-    height: 100%;
+}
+
+.barra li .pannot a {
+    width: 18.6vw;
+    height: 18.6vw;
 }
 
 /* POSICIONES CONVERTIDAS A RESPONSIVE */
 
 .home {
     background-image: url(../img/home-blanc.png);
-    top: 46px;
-    left: 7%; /* Equivale a tus 40px originales en un móvil estándar */
 }
 
 .grups {
     background-image: url(../img/grups-groc.png);
-    top: 46px;
-    left: 6%; 
 }
 
 .pannot {
     background-image: url(../img/panot-groc.png);
-    top: 18px !important;
-    left: 8.8%;
-    height: 92px !important;
-    width: 23vw !important;
+
+    height: 18.6vw !important;
+    width: 18.6vw !important;
+    margin-left: 3.5vw !important;
+    margin-right: 3.5vw !important;
+    top: -3vw;
 }
 
 .recursos {
     background-image: url(../img/recursos-groc.png);
-    top: 46px;
-    left: 13%;
 }
 
 .perfil {
     background-image: url(../img/perfil-groc.png);
-    top: 48px;
-    left: 12%;
 }
 
 /* LÓGICA PARA LAS OTRAS PÁGINAS (ACTIVOS) */
