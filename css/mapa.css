@@ -2,50 +2,27 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: red;
 }
 
 * {
     position: relative;
 }
 
-/* PAGINA 1 - HOME */
-
-.cap {
-    background-image: url(../img/bcn.jpg);
-    background-size: cover;
-    margin: 0;
-    height: 300px;
-    width: 100vw;
-}
-
-.contingut {
-    background-color: #fffAEB;
-    border-radius: 50px 50px 0 0;
-    margin-top: -80px;
-    width: 100vw;
-    margin: auto;
-    padding-bottom: 120px; /* Para que el texto no quede debajo del menú */
-}
-
-.bienvenida {
-    width: calc(100% - 40px);
-    height: 100px;
-    background: red;
-    margin: 20px auto;
-}
 
 /* BARRA MENÚ */
 
 .barra {
     width: 100vw;
     height: 22.8vw;
-    background-image: url(../img/fondmenu-home.png);
+    background-image: url(../img/fondmenu-grups.png);
     background-repeat: no-repeat;
     background-size: 100% 100%; 
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
 }
 
 .barra ul {
@@ -76,19 +53,18 @@ body {
     height: 18.6vw;
 }
 
-/* POSICIONES CONVERTIDAS A RESPONSIVE */
+/* ICONS MENU */
 
 .home {
-    background-image: url(../img/home-blanc.png);
+    background-image: url(../img/home-groc.png);
 }
 
 .grups {
-    background-image: url(../img/grups-groc.png);
+    background-image: url(../img/grups-blanc.png);
 }
 
 .pannot {
     background-image: url(../img/panot-groc.png);
-
     height: 18.6vw !important;
     width: 18.6vw !important;
     margin-left: 3.5vw !important;
@@ -104,7 +80,7 @@ body {
     background-image: url(../img/perfil-groc.png);
 }
 
-/* LÓGICA PARA LAS OTRAS PÁGINAS (ACTIVOS) */
+/* VINCULOS */
 
 /* Pagina 2 - Grups */
 #pg2grups .barra { background-image: url(../img/fondmenu-grups.png); }
@@ -125,3 +101,33 @@ body {
 #pg5perfil .barra { background-image: url(../img/fondmenu-perfil.png); }
 #pg5perfil .home { background-image: url(../img/home-groc.png); }
 #pg5perfil .perfil { background-image: url(../img/perfil-blanc.png); }
+
+/*
+
+<div class="contenedor">
+  <div class="contenido">
+    
+  </div>
+</div>
+
+* {
+  position: relative;
+}
+
+.contenedor {
+  width:100vw;
+  height: 100vh;
+  background-color: red;
+  overflow-X: visible;
+  overflow-Y: visible;
+}
+
+.contenido {
+  width:200vw;
+  height: 200vh;
+  top:-50vh;
+  left: -50vw;
+  background-image: url(https://images.pexels.com/photos/36928649/pexels-photo-36928649.jpeg?_gl=1*11twow1*_ga*MzczMjY5MDg3LjE3NzY0MzUwMTU.*_ga_8JE65Q40S6*czE3NzY0MzUwMTQkbzEkZzEkdDE3NzY0MzUwMjAkajU0JGwwJGgw);
+}
+
+*/

@@ -313,7 +313,6 @@ body {
 
 .pannot {
     background-image: url(../img/panot-groc.png);
-
     height: 18.6vw !important;
     width: 18.6vw !important;
     margin-left: 3.5vw !important;
@@ -329,7 +328,7 @@ body {
     background-image: url(../img/perfil-groc.png);
 }
 
-/* LÓGICA PARA LAS OTRAS PÁGINAS (ACTIVOS) */
+/* VINCULOS */
 
 /* Pagina 2 - Grups */
 #pg2grups .barra { background-image: url(../img/fondmenu-grups.png); }
