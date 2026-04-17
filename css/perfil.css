@@ -4,16 +4,32 @@
     font-family: 'Kepler';
     src: url('../fonts/KeplerStdBold.woff') format('woff');
     font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
+@font-face {
+    font-family: 'Kepler';
+    src: url('../fonts/KeplerStdRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'SourceSans-Bold';
     src: url('../fonts/SourceSans3-Bold.woff') format('woff');
     font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
     font-family: 'SourceSans-Regular';
     src: url('../fonts/SourceSans3-Regular.woff') format('woff');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 body {
@@ -24,57 +40,84 @@ body {
     font-family: 'SourceSans-Regular', sans-serif;
 }
 
-* { position: relative; box-sizing: border-box; }
+* {
+    position: relative;
+    box-sizing: border-box;
+}
 
 /* CABECERA */
 
-.cabecera { width: 100%; height: 80px; }
+.cabecera {
+    width: 100%; height: 80px;
+}
 
 .confi {
     width: 35px; height: 35px;
     background-image: url(../img/icon-confi.png);
-    background-repeat: no-repeat; background-size: contain;
-    float: left; margin: 25px; z-index: 1000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left; margin: 25px;
+    z-index: 1000;
 }
 
 .money {
-    width: auto; min-width: 80px; height: 35px;
-    background-color: white; border-radius: 20px;
-    float: right; margin: 25px; padding: 5px 15px;
-    display: flex; align-items: center; justify-content: center;
+    width: auto;
+    min-width: 80px;
+    height: 35px;
+    background-color: white;
+    border-radius: 20px;
+    float: right;
+    margin: 25px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.1);
 }
-.money span { font-weight: bold; margin-right: 5px; }
+
+.money span{
+    font-weight: bold;
+    margin-right: 5px;
+}
 
 /* PERFIL */
 
 .perfil-superior {
-    display: flex; justify-content: center;
-    margin-top: 10px; margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .circle-blanc {
     background-color: white;
-    width: 180px; height: 180px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .img-perfil {
     width: 165px; height: 165px;
     border-radius: 50%;
     background-image: url(../img/raquel.png); /* Tu imagen aquí */
-    background-size: cover; background-position: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .img-editar {
     width: 35px; height: 35px;
     background-color: white;
     background-image: url(../img/icon-edit-pencil.png);
-    background-repeat: no-repeat; background-size: 60%;
+    background-repeat: no-repeat;
+    background-size: 60%;
     background-position: center;
     border-radius: 50%;
-    position: absolute; top: 10px; right: 5px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
 }
 
@@ -89,26 +132,41 @@ body {
     box-shadow: 0px 10px 20px rgba(0,0,0,0.05);
 }
 
-.label-mini { color: #aaa; font-size: 12px; margin-bottom: 5px; font-weight: bold; }
-.label-mini.left { text-align: left; margin-top: 20px; }
+.label-mini {
+    font-family: 'SourseSans-Bold', sans-serif;
+    color: #A5A3A3;
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.label-mini.left {
+    text-align: left;
+    margin-top: 20px;
+}
 
 .user-name {
     font-family: 'Kepler', serif;
-    font-size: 32px; margin: 0; padding: 0;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
     text-shadow: 0.8px 0.8px 1px rgba(0, 0, 0, 0.3); 
 }
 
 .btn-editar-main {
-    background-color: #FFBE00; color: white;
-    border: none; padding: 6px 40px;
-    border-radius: 10px; margin: 15px 0;
-    font-weight: bold; box-shadow: 0px 3px 0px rgb(0, 0, 0, 0.1);
+    background-color: #FFBE00;
+    color: white;
+    border: none;
+    padding: 6px 40px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-weight: bold;
+    box-shadow: 0px 0.6px 1px rgb(0, 0, 0, 0.1);
 }
 
 .box-text {
     border: 3px solid #f2c94c; border-radius: 20px;
     padding: 15px; font-size: 14px; text-align: left;
-    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
 }
 
 .dades-item {
@@ -118,17 +176,25 @@ body {
 
 /* ÍCONOS DATOS */
 
-.icon-tel, .icon-loc, .icon-mail { width: 20px; height: 20px; background-size: contain; background-repeat: no-repeat; }
+.icon-tel, .icon-loc, .icon-mail {width: 20px; height: 20px; background-size: contain; background-repeat: no-repeat; }
 .icon-tel { background-image: url(../img/tel.png); }
 .icon-loc { background-image: url(../img/loc.png); }
 .icon-mail { background-image: url(../img/mail.png); }
 
 .box-progres {
-    border: 3px solid #FFBE06; border-radius: 20px;
-    padding: 10px; display: flex; justify-content: space-around;
+    border: 3px solid #FFBE06;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
-.panot-icon { width: 30px; height: 30px; background-image: url(../img/panot-groc.png); background-size: contain; background-repeat: no-repeat; }
+.panot-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/panot-groc.png);
+    background-size: contain;
+    background-repeat: no-repeat; }
 
 /* BARRA MENÚ */
 
