@@ -36,7 +36,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    /* Ajuste de fondo bicolor */
+    height: 100%;
     background: linear-gradient(to bottom, #F5C144 50%, #FFFBEB 50%);
     background-attachment: fixed;
     font-family: 'SourceSans-Regular', sans-serif;
