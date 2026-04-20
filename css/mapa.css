@@ -8,6 +8,16 @@ body {
     position: relative;
 }
 
+/* CODIGOS MAPA */
+
+.mapax {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/mapa.png);
+    background-size: cover;
+
+}
+
 /* BARRA MENÚ */
 
 .barra {
