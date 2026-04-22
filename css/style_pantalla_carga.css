@@ -20,7 +20,6 @@ body {
     animation: 3s subida, 4s ampliar ease-in 4s forwards;
 }
 
-
 .icona {
     animation: 2s rotacio linear infinite;
 }

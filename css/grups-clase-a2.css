@@ -90,16 +90,75 @@ body {
 
 .header-title {
     position: absolute;
-    top: 64%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
     font-family: 'Kepler', serif;
-    font-size: 28px;
+    font-size: 23.4px;
     width: 85%;
     text-align: right;
     line-height: 1.1;
     pointer-events: none;
+}
+
+/* FOTO CABECERA */
+
+.header-image-container .avatar-item {
+    position: absolute !important;
+    top: 64% !important;
+    left: 8% !important;
+    transform: translateY(-50%);
+    width: 70px !important;
+    z-index: 20;
+}
+
+.header-image-container .avatar-circle {
+    width: 70px !important;
+    height: 70px !important;
+    margin-bottom: 0;
+    border: 3px solid #F5C143;
+}
+
+.header-title {
+    width: 60% !important;
+    left: 62% !important;
+    text-align: left !important;
+}
+
+/* ESTILO GRUP (A2) */
+
+.nivel-grup-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nivel-grup-container h3 {
+    font-family: 'SourceSans-Bold', sans-serif;
+    font-size: 18px;
+    color: #4C4C4C;
+}
+
+.tag-nivel {
+    background-color: #F5C143;
+    color: black;
+    padding: 4px 15px;
+    border-radius: 15px;
+    font-family: 'SourceSans-Bold', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* TAMAÑO RELOG DE ARENA */
+
+.icon-arena {
+    width: 1.3rem !important;
+    height: auto !important;
+    margin-right: 25px !important;
+    left: 5px !important;
 }
 
 /* INFORMACIO */
@@ -234,6 +293,7 @@ body {
     color: white;
     cursor: pointer;
     display: block;
+    top: 70px;
 }
 
 /* BOTON SUPERIOR */
