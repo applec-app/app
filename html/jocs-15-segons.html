@@ -17,26 +17,26 @@
     </div>
 
     <div class="groga-fond">
-    <div class="juego-contenido">
-        
-        <div class="seccion-tiempo">
-            <span class="numero-15">15</span>
-            <div class="icono-reloj"></div>
-        </div>
-
-        <div class="contenedor-tarjeta">
-            <div class="tarjeta-blanca"></div>
-            <div class="boton-habitacio">
-                HABITACIÓ
+        <div class="juego-contenido">
+            
+            <div class="seccion-tiempo">
+                <span class="numero-15" id="contador">15</span>
+                <div class="icono-reloj"></div>
             </div>
-        </div>
 
-        <div class="contenedor-input">
-            <input type="text" placeholder="Escriu qualsevol cosa..." class="input-juego">
-        </div>
+            <div class="contenedor-tarjeta">
+                <div class="tarjeta-blanca" id="pizarra"></div>
+                <div class="boton-habitacio">
+                    HABITACIÓ
+                </div>
+            </div>
 
+            <div class="contenedor-input">
+                <input type="text" placeholder="Escriu qualsevol cosa..." class="input-juego" id="entrada-texto">
+            </div>
+
+        </div>
     </div>
-</div>
 
     <div class="barra">
         <ul>
@@ -47,5 +47,41 @@
             <li class="perfil"><a href="pg5perfil.html"></a></li>
         </ul>
     </div>
+
+    <script>
+        // --- LÒGICA DEL COMPTE ENRERE ---
+        let segundos = 15;
+        const elementoContador = document.getElementById('contador');
+
+        const cuentaAtras = setInterval(() => {
+            segundos--; 
+            elementoContador.textContent = segundos;
+
+            if (segundos <= 0) {
+                clearInterval(cuentaAtras);
+                elementoContador.textContent = "0";
+                elementoContador.style.color = "red"; 
+                elementoContador.style.transform = "scale(1.1)";
+                setTimeout(() => elementoContador.style.transform = "scale(1)", 100);
+            }
+        }, 1000);
+
+        // --- LÒGICA PER ENVIAR TEXT AMB ENTER ---
+        const entrada = document.getElementById('entrada-texto');
+        const pizarra = document.getElementById('pizarra');
+
+        entrada.addEventListener('keypress', function (e) {
+            // Comprovem si la tecla premuda és 'Enter'
+            if (e.key === 'Enter') {
+                const textoEscrito = entrada.value;
+
+                // Si hi ha text, el posem a la targeta i netegem l'input
+                if (textoEscrito.trim() !== "") {
+                    pizarra.textContent = textoEscrito;
+                    entrada.value = ""; 
+                }
+            }
+        });
+    </script>
 </body>
 </html>
