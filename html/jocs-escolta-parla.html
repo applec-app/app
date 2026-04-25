@@ -18,11 +18,11 @@
                     </div>
                     
                     <div class="controles-audio">
-                        <img src="../img/icon-audio.png" alt="Pausa" class="icon-pausa">
+                        <img src="../img/icon-audio.png" alt="Play" class="icon-pausa" id="boton-control">
                         <img src="../img/icon-retroceso-sonido.png" alt="Repetir" class="icon-repetir">
                     </div>
 
-                    <div class="contenedor-frase">
+                    <div class="contenedor-frase" id="texto-frase">
                         <p class="texto-juego">“La Laia surt a comprar amb la seva mare al mercat”</p>
                     </div>
                     
@@ -50,5 +50,26 @@
             <li class="perfil"><a href="pg5perfil.html"></a></li>
         </ul>
     </div>
+
+    <script>
+        const botonControl = document.getElementById('boton-control');
+        const contenedorFrase = document.getElementById('texto-frase');
+
+        let estaReproduciendo = false;
+
+        botonControl.addEventListener('click', function() {
+            if (!estaReproduciendo) {
+                // CAMBIO A ESTADO "REPRODUCIENDO" (Imagen 2)
+                this.src = '../img/icon-pausa.png'; // Cambia a las barritas
+                contenedorFrase.style.visibility = 'hidden'; // Oculta el texto
+                estaReproduciendo = true;
+            } else {
+                // VOLVER AL ESTADO "INICIAL" (Imagen 1)
+                this.src = '../img/icon-audio.png'; // Vuelve al icono play
+                contenedorFrase.style.visibility = 'visible'; // Muestra el texto
+                estaReproduciendo = false;
+            }
+        });
+    </script>
 </body>
 </html>

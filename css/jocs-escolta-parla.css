@@ -74,6 +74,13 @@ body {
     width: 30px;
     height: auto;
     display: block;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+icon-pausa:active {
+    transform: scale(0.9);
 }
 
 .icon-repetir {
@@ -135,11 +142,10 @@ body {
 
 .contenedor-microfono:active {
     background-color: #FFFFFF;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra interna/suave */
-    transform: scale(0.96); /* Se hunde un poco */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(0.96);
 }
 
-/* Al tocar: El micro cambia a negro automáticamente */
 .contenedor-microfono:active .icon-microfono {
     filter: invert(1); 
 }
