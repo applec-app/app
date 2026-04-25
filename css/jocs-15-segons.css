@@ -134,6 +134,13 @@ body {
     background-color: white;
     border-radius: 40px;
     box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;    /* Palabras en columna */
+    justify-content: flex-end; /* Las nuevas aparecen abajo y empujan arriba */
+    align-items: center;       /* Centrado horizontal */
+    padding: 30px;
+    padding-bottom: 60px;      /* Espacio para que no las tape el botón amarillo */
+    overflow-y: auto;
 }
 
 .boton-habitacio {
@@ -156,13 +163,15 @@ body {
 }
 
 .contenedor-input {
-    width: 85%;
-    margin-top: 80px;
+    width: 94%;
+    margin-top: 8vh;
 }
 
 .input-juego {
     width: 100%;
-    height: 55px;
+    height: 6vh;
+    min-height: 50px;
+    max-height: 80px;
     border-radius: 15px;
     border: 1px solid #eee;
     padding: 0 20px;
@@ -170,6 +179,22 @@ body {
     background-color: white;
     outline: none;
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.palabra-acumulada {
+    font-family: 'SourceSans-Bold', sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin: 5px 0;
+    width: 100%;
+    text-align: center;
+    /* Animación suave al aparecer */
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 380px) {

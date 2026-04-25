@@ -49,10 +49,12 @@
     </div>
 
     <script>
-        // --- LÒGICA DEL COMPTE ENRERE ---
-        let segundos = 15;
         const elementoContador = document.getElementById('contador');
+        const entrada = document.getElementById('entrada-texto');
+        const pizarra = document.getElementById('pizarra');
+        let segundos = 15;
 
+        // --- LÒGICA DEL COMPTE ENRERE ---
         const cuentaAtras = setInterval(() => {
             segundos--; 
             elementoContador.textContent = segundos;
@@ -61,24 +63,32 @@
                 clearInterval(cuentaAtras);
                 elementoContador.textContent = "0";
                 elementoContador.style.color = "red"; 
+                
+                // BLOQUEO DEL INPUT:
+                entrada.disabled = true; // Ya no deja escribir
+                entrada.placeholder = "Temps esgotat!"; // Cambia el mensaje
+                entrada.style.backgroundColor = "#eeeeee"; // Se pone gris para indicar bloqueo
+                
+                // Efecto visual
                 elementoContador.style.transform = "scale(1.1)";
                 setTimeout(() => elementoContador.style.transform = "scale(1)", 100);
             }
         }, 1000);
 
-        // --- LÒGICA PER ENVIAR TEXT AMB ENTER ---
-        const entrada = document.getElementById('entrada-texto');
-        const pizarra = document.getElementById('pizarra');
-
+        // --- LÒGICA ACUMULATIVA ---
         entrada.addEventListener('keypress', function (e) {
-            // Comprovem si la tecla premuda és 'Enter'
             if (e.key === 'Enter') {
-                const textoEscrito = entrada.value;
+                const textoEscrito = entrada.value.trim();
 
-                // Si hi ha text, el posem a la targeta i netegem l'input
-                if (textoEscrito.trim() !== "") {
-                    pizarra.textContent = textoEscrito;
+                if (textoEscrito !== "") {
+                    const nuevaPalabra = document.createElement('div');
+                    nuevaPalabra.textContent = textoEscrito;
+                    nuevaPalabra.className = 'palabra-acumulada';
+                    
+                    pizarra.appendChild(nuevaPalabra);
                     entrada.value = ""; 
+
+                    pizarra.scrollTop = pizarra.scrollHeight;
                 }
             }
         });
