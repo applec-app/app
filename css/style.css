@@ -212,7 +212,7 @@ body {
     max-width: 350px; 
 }
 #step-2 .input-group input {
-    height: 7vh;
+    height: 5vh;
     min-height: 50px; 
     border-radius: 15px;
 }
@@ -222,6 +222,7 @@ body {
     max-font-size: 14px;
 }
 #step-2 .input-group { margin-bottom: 2vh; }
+
 #step-2 .forgot-password {
     margin-top: 0.5vh;
     margin-bottom: 3vh;
