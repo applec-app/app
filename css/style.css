@@ -86,7 +86,7 @@ body {
 }
 
 .main-title {
-    font-size: 62px;
+    font-size: 16vw;
     color: #EC001B;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
     font-family: 'Kepler';
