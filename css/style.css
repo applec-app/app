@@ -180,7 +180,9 @@ body {
     width: 100%;
 }
 
-.button-group .btn { width: 270px; }
+.button-group .btn { 
+    width: 270px;
+}
 
 .btn-full {
     width: 100%;
