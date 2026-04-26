@@ -192,51 +192,16 @@ body {
 
 /* 1. INICI DE SESSIÓ (#step-2) */
 
-#step-2 .logo-small {
-    width: 25vw;
-    height: 25vw;
-    max-width: 100px;
-    margin-top: 2vh;
-}
-
 #step-2 .form-title-serif {
-    margin-top: 2vh;
-    font-size: 3vh;
+    margin-top: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    line-height: 1;
 }
 
-#step-2 .custom-form { 
-    margin-top: 4vh;
-    width: 90%;
-    max-width: 350px; 
-}
-#step-2 .input-group input {
-    height: 5vh;
-    min-height: 50px; 
-    border-radius: 15px;
-}
-
-#step-2 .input-group label {
-    font-size: 4vw;     /* Fuente de etiqueta adaptativa */
-    max-font-size: 14px;
-}
-#step-2 .input-group { margin-bottom: 2vh; }
-
-#step-2 .forgot-password {
-    margin-top: 0.5vh;
-    margin-bottom: 3vh;
-    text-align: center;
-    color: #B19146;
-    font-size: 13px;
-}
-#step-2 .btn-full {
-    height: 8vh;        /* Altura del botón igual que en la pantalla de inicio */
-    min-height: 55px;
-    margin-top: auto;   /* Empuja el botón al fondo del contenedor si hay espacio */
-    margin-bottom: 4vh; 
-    font-size: 6vw;
-}
+#step-2 .custom-form { margin-top: 90px; }
+#step-2 .input-group input { height: 74px; }
+#step-2 .input-group { margin-bottom: 25px; }
+#step-2 .forgot-password { margin-top: -10px; margin-bottom: 10px; text-align: center; color: #B19146; font-size: 13px; }
+#step-2 .btn-full { height: 65px; }
 
 /* 2. REGISTRA'T (#step-3) */
 
