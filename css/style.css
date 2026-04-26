@@ -96,13 +96,16 @@ body {
 }
 
 .subtitle {
-    font-size: 20px;
+    font-size: 5.3vw;
     color: #630100;
     font-weight: 300;
     font-family: 'SourceSans-Regular', sans-serif;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 4vh; 
     line-height: 1.2;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .form-title-serif {
