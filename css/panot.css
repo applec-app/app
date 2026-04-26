@@ -1,5 +1,4 @@
-/* TIPOGRAFÍAS */
-
+/* TIPOGRAFÍAS (tus mismas rutas) */
 @font-face {
   font-family: 'Kepler';
   src: url('../fonts/KeplerStdBold.woff') format('woff');
@@ -7,7 +6,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Kepler';
   src: url('../fonts/KeplerStdRegular.woff') format('woff');
@@ -15,7 +13,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'SourceSans-Bold';
   src: url('../fonts/SourceSans3-Bold.woff') format('woff');
@@ -23,7 +20,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'SourceSans-Regular';
   src: url('../fonts/SourceSans3-Regular.woff') format('woff');
@@ -32,191 +28,196 @@
   font-display: swap;
 }
 
-body {
+/* ----- RESET Y BASE ADAPTABLE ----- */
+* {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body {
   background-color: #F5C143;
   font-family: 'SourceSans-Regular', sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-* {
-  position: relative;
-  box-sizing: border-box;
-}
-
-/* CABECERA */
-
+/* ----- CABECERA (fija arriba) ----- */
 .cabecera {
-  height: 80px;
-  padding: 0 8vw;
+  flex-shrink: 0;
+  padding: 20px 24px 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 30px;
+  background: transparent;
 }
 
-span {
-  font-size: 36px;
+.cabecera span {
+  font-size: clamp(28px, 7vw, 42px);
   color: black;
   font-family: 'Kepler', serif;
   font-weight: bold;
 }
 
 .gancho {
-  width: 45px;
-  height: 45px;
+  width: 44px;
+  height: 44px;
   background-image: url('../img/icon-ropa.png');
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   display: block;
 }
 
+/* ----- CONTENEDOR PRINCIPAL (ocupa el espacio restante) ----- */
 .contenedor-chat {
   background-color: #FFFDF1;
   border-radius: 40px 40px 0 0;
-  margin-top: 40px;
-  height: calc(100vh - 120px);
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 5vh 6vw 15vh 6vw;
-  z-index: 1;
+  justify-content: space-between;
+  padding: 20px 16px 30px 16px;
+  margin: 0 12px 0 12px;
+  /* Espacio inferior para que no choque con el menú fijo */
+  margin-bottom: 80px;
 }
 
+/* ----- NUBE (burbuja de texto) ----- */
 .nube-sessio {
-  width: 100vw;
-  height: 100vh;
-  max-width: 90vw;
-  height: auto;
+  width: 90%;
+  max-width: 320px;
   margin: 0 auto;
-  min-height: 290px;
   background-image: url('../img/nube-sessio.png');
-  background-size: 100% 100%;
+  background-size: 100% 100%;   /* La imagen se adapta sin deformarse mucho */
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 60px 80px 60px;
-  margin-top: -2vh;
+  padding: 12% 8% 12% 8%;
+  min-height: 140px;
 }
 
 .nube-sessio p {
-  font-family: 'Kepler-Regular', serif;
-  font-size: 28px;
+  font-family: 'Kepler', serif;
+  font-size: clamp(20px, 5vw, 28px);
   color: #A0A0A0;
   text-align: center;
   margin: 0;
+  line-height: 1.3;
 }
 
+/* ----- PERSONAJE PANOT (escala con la pantalla) ----- */
 .personaje-panot {
-  width: 100vw;
-  height: 100vh;
-  max-width: 400px;
-  margin-top: -10vh;
-  margin-bottom: -5vh;
-  z-index: 2;
+  width: 60%;
+  max-width: 280px;
+  margin: 10px auto;
+  flex-shrink: 0;
 }
 
 .personaje-panot img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
+/* ----- INPUT INFERIOR (siempre accesible) ----- */
 .buscador-inferior {
   width: 100%;
-  max-width: 85vw;
-  margin-top: 0;
-  position: absolute;
-  bottom: 15vh;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
+  max-width: 500px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 0 8px;
 }
 
 .buscador-inferior input {
   width: 100%;
   border: none;
-  border-radius: 20px;
-  padding: 20px 25px;
+  border-radius: 60px;
+  padding: 16px 22px;
   font-family: 'SourceSans-Regular', sans-serif;
-  font-size: 20px;
-  color: #888;
+  font-size: 18px;
+  color: #555;
   background-color: white;
-  box-shadow: inset 0px 4px 10px rgba(0,0,0,0.1); 
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05), 0 2px 8px rgba(0,0,0,0.05);
   outline: none;
+  text-align: left;
 }
 
-/* BARRA MENÚ */
+.buscador-inferior input:focus {
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05), 0 0 0 3px rgba(245,193,67,0.3);
+}
 
+/* ----- MENÚ INFERIOR (fijo, adaptable) ----- */
 .barra {
-  width: 100vw;
-  height: 22.8vw;
-  background-image: url(../img/fondmenu-panot.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  width: 100%;
+  background-image: url(../img/fondmenu-panot.png);
+  background-repeat: no-repeat;
+  background-size: cover;        /* La imagen de fondo se adapta al ancho */
+  background-position: center top;
+  padding: 12px 8px 20px 8px;
+  z-index: 1000;
 }
 
+/* Contenedor de los 5 botones: flex para que se repartan el espacio */
 .barra ul {
-  width: 90.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  list-style: none;
   margin: 0 auto;
   padding: 0;
-  list-style-type: none;
-  top: 7vw;
+  max-width: 450px;
+  gap: 5px;
 }
 
+/* Cada elemento del menú */
 .barra li {
-  width: 14.15vw;
-  height: 14.15vw;
-  margin: 1vw;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-size: contain;
   background-repeat: no-repeat;
-  float: left;
+  background-position: center;
+  min-height: 60px;
 }
 
 .barra li a {
-  width: 14.15vw;
-  height: 14.15vw;
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
-.barra li .pannot a {
-  width: 18.6vw;
-  height: 18.6vw;
-}
+/* Iconos de fondo (tus imágenes) */
+.home { background-image: url(../img/home-groc.png); }
+.grups { background-image: url(../img/grups-groc.png); }
+.recursos { background-image: url(../img/recursos-groc.png); }
+.perfil { background-image: url(../img/perfil-groc.png); }
 
-/* ICONS MENU */
-
-.home { background-image: url(../img/home-groc.png);
-}
-
-.grups { background-image: url(../img/grups-groc.png);
-}
-
+/* El ítem central "pannot" tiene un tamaño ligeramente mayor y sobresale */
 .pannot {
   background-image: url(../img/panot-blanc.png);
-  height: 18.6vw !important;
-  width: 18.6vw !important;
-  margin-left: 3.5vw !important;
-  margin-right: 3.5vw !important;
-  top: -3vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1.2;          /* Ocupa un poco más de espacio */
+  transform: translateY(-8px);  /* Efecto de elevarse */
+  min-height: 70px;
 }
 
-.recursos { background-image: url(../img/recursos-groc.png);
-}
-
-.perfil { background-image: url(../img/perfil-groc.png);
-}
-
-/* VINCULOS PÁGINAS */
-
+/* --- Mantenemos los estilos de vínculos para otras páginas (opcional) --- */
 #pg2grups .barra { background-image: url(../img/fondmenu-grups.png); }
 #pg2grups .home { background-image: url(../img/home-groc.png); }
 #pg2grups .grups { background-image: url(../img/grups-blanc.png); }
@@ -232,3 +233,45 @@ span {
 #pg5perfil .barra { background-image: url(../img/fondmenu-perfil.png); }
 #pg5perfil .home { background-image: url(../img/home-groc.png); }
 #pg5perfil .perfil { background-image: url(../img/perfil-blanc.png); }
+
+/* ----- Ajustes extra para pantallas muy pequeñas (menos de 400px) ----- */
+@media (max-width: 450px) {
+  .cabecera {
+    padding: 12px 16px;
+  }
+  .contenedor-chat {
+    padding: 16px 12px 20px 12px;
+    margin-bottom: 70px;
+  }
+  .nube-sessio {
+    padding: 10% 6%;
+  }
+  .buscador-inferior input {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+  .barra {
+    padding: 8px 5px 15px 5px;
+  }
+  .pannot {
+    transform: translateY(-5px);
+    min-height: 60px;
+  }
+}
+
+/* Para móviles con muesca (notch) o barra de gestos */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .barra {
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  }
+  .contenedor-chat {
+    margin-bottom: calc(80px + env(safe-area-inset-bottom));
+  }
+}
+
+/* Para pantallas altas (ej. 20:9) que el input no quede muy arriba */
+@media (min-height: 750px) {
+  .personaje-panot {
+    max-width: 260px;
+  }
+}
