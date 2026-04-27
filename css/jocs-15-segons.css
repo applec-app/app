@@ -139,11 +139,11 @@ body {
 
 .boton-habitacio {
     position: absolute;
-    bottom: -40px;
+    bottom: -7vw;
     left: 50%;
     transform: translateX(-50%);
-    width: 85%;
-    height: 65px;
+    width: 70vw;
+    height: 15vw;
     background-color: #F5C143;
     color: white;
     border-radius: 20px;
