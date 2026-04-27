@@ -213,22 +213,18 @@ body {
     margin-bottom: 40px;
 }
 
-
 /* 1. INICI DE SESSIÓ (#step-2) */
-
 
 #step-2 .form-title-serif {
     margin-top: clamp(20px, 5vw, 40px);;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
 #step-2 .custom-form { margin-top: 90px; }
 #step-2 .input-group input { height: 74px; }
 #step-2 .input-group { margin-bottom: 25px; }
 #step-2 .forgot-password { margin-top: -10px; margin-bottom: 10px; text-align: center; color: #B19146; font-size: 13px; }
 #step-2 .btn-full { height: 65px; }
-
 
 /* 2. REGISTRA'T (#step-3) */
 
@@ -255,12 +251,10 @@ body {
     height: 100%;
 }
 
-
 .logo-faded {
     opacity: 0.35;
     margin-top: 1vh;
 }
-
 
 .speech-container {
     width: 100%;
@@ -271,7 +265,6 @@ body {
     top: 230px;
     z-index: 10;
 }
-
 
 #step-4 .speech-bubble,
 #step-5 .speech-bubble,
@@ -289,7 +282,6 @@ body {
     flex-direction: column;
 }
 
-
 #step-4 .speech-bubble p,
 #step-5 .speech-bubble p,
 #step-6 .speech-bubble p,
@@ -303,7 +295,6 @@ body {
     margin-left: -24px;
 }
 
-
 #step-4 .speech-bubble strong,
 #step-5 .speech-bubble strong,
 #step-6 .speech-bubble strong,
@@ -314,9 +305,7 @@ body {
     font-family: 'Kepler';
 }
 
-
 /* Flechas (Pag 4, 7, 8) */
-
 
 #step-4 .btn-next-arrow,
 #step-7 .btn-next-arrow,
@@ -336,7 +325,6 @@ body {
     justify-content: center;
 }
 .btn-next-arrow img { width: 30px; }
-
 
 /* Grupos de botones generales */
 
@@ -367,9 +355,7 @@ body {
     font-size: 14px;
 }
 
-
 /* AJUSTE ESPECÍFICO PÁGINA 6: BOTONES Y ESPACIADO CORREGIDO */
-
 
 #step-6 .level-button-group {
     bottom: 55px; /* Subido para que quede bien centrado en el área blanca */
@@ -382,7 +368,6 @@ body {
     padding: 0;
 }
 
-
 #step-6 .level-button-group .btn-role {
     min-width: 40px;
     padding: 10px 12px;
@@ -392,9 +377,7 @@ body {
     max-width: 100px;
 }
 
-
 /* PERSONAJE */
-
 
 .character-container {
     position: absolute;
@@ -406,7 +389,6 @@ body {
     justify-content: center;
     line-height: 0;
 }
-
 
 .character-img {
     width: 125%;
