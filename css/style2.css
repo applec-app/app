@@ -349,7 +349,7 @@ h2 {
         line-height: 2;
 
         color: white;
-        text-shadow: 0 2px 5px grey;
+        text-shadow: 0 1px 2.5px grey;
     }
 
             .icona_rellotge {
@@ -377,7 +377,7 @@ h2 {
 
         text-align: right;
         font-size: 19px;
-        text-shadow: 0 2px 5px grey;
+        text-shadow: 0 1px 2.5px grey;
         line-height: 1.5;
         font-style: italic;
 
@@ -497,14 +497,14 @@ h2 {
         margin-bottom: 0.5vh;
 
         border-radius: 40%;
-        box-shadow: inset 0 0px 2px grey;
+        box-shadow: inset 0 0px 1px grey;
         background-color: rgb(255, 255, 255);
 
         font-style: normal;
         text-align: center;
         line-height: 1.5;
         font-size: 16px;
-        text-shadow: 0px 0px 3px rgb(145, 145, 145);
+        text-shadow: 0px 0px 1px rgb(145, 145, 145);
         color: black;
     }
 
@@ -513,7 +513,7 @@ h2 {
     font-size: 22px;
     font-family: 'SourceSans-Bold', sans-serif;
     font-weight: bold;
-    text-shadow: 0px 0px 3px rgb(145, 145, 145);
+    text-shadow: 0px 0px 1.5px rgb(145, 145, 145);
     line-height: 3.5;
     }
 

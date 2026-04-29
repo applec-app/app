@@ -39,7 +39,7 @@ body {
     overflow: visible;
 
     transform: translate(-50%, -50%);
-    transform: scale(200%, 200%);
+    transform: scale(150%, 150%);  /* 200% 200% */
  
     width: 1172px;
     height: 2693px; 
@@ -54,12 +54,12 @@ body {
 
 .user-location {
     position: absolute;
-    top: 39%;
-    left: 54%;
-    width: 20px;
-    height: 20px;
+    top: 31%;
+    left: 33%;
+    width: 3vw;
+    height: 3vw;
     background-color: #3858f6;
-    border: 3px solid white;
+    border: 2.4px solid white;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
@@ -112,15 +112,15 @@ body {
 
 .nube-aviso {
     position: absolute;
-    top: 39%; 
-    left: 55.6%;
+    top: 30.9%; 
+    left: 33.6%;
     transform: translate(-50%, -130%); 
     background-color: #ff2222;
     color: white;
     padding: 7px 14px;
     border-radius: 20px;
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 8px;
     white-space: nowrap;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
     z-index: 10;

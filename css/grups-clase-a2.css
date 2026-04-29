@@ -54,43 +54,31 @@ body {
 }
 
 .contenedor {
-    display: flex;
-    justify-content: center;
     width: 100%;
 }
 
 .blanc {
-    width: 100%;
-    max-width: 500px;
-    height: 85vh;
+    position: center;
+    width: 100vw;
+    height: 100vh;
     background-color: white;
-    position: fixed;
-    top: 13%;
     border-radius: 30px 30px 0 0;
-    overflow-y: auto;
-    z-index: 10;
+
+    float: left;
 }
 
 .header-image-container {
     position: relative;
     width: 100vw;
-    height: 15vh;
+    height: 13vh;
     border-radius: 30px 30px 30px 30px;
-    overflow: hidden;
-    top: -5%;
     box-shadow: 0px 6px 8px 0px rgba(0, 0, 0, 0.18);
 }
 
-.header-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
 
 .header-title {
     position: absolute;
-    top: 65%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
@@ -106,7 +94,7 @@ body {
 
 .header-image-container .avatar-item {
     position: absolute !important;
-    top: 64% !important;
+    top: 55% !important;
     left: 8% !important;
     transform: translateY(-50%);
     width: 70px !important;
@@ -165,7 +153,7 @@ body {
 
 .info-content {
     padding: 15px 12%;
-    top: -4px;
+    top: 4vh;
 }
 
 .info-item {
@@ -304,9 +292,6 @@ body {
     background-size: contain;
     float: left;
     margin: 25px;
-    z-index: 1000;
-    display: block;
-    position: relative;
 }
 
 .status-dot {
