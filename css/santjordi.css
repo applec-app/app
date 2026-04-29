@@ -239,13 +239,15 @@ body {
 /* BOTON SUPERIOR */
 
 .flecha {
-    width: 40px;
-    height: 40px;
-    background-image: url(../img/flecha-retro.png);
+    width: 5vw;
+    height: 50px;
+    background-image: url(../img/boto_enrere.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     float: left;
-    margin: 25px;
+    margin-left: 9vw;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
 }
 
 /* BARRA MENÚ */

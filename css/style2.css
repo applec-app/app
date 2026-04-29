@@ -367,6 +367,7 @@ h2 {
 
             .temps_conversa {
                 font-style: normal;
+                text-shadow:  0px 1px grey;
             }
 
     .nom_dia {
@@ -584,6 +585,7 @@ h2 {
 
     .nivell_totes {
         width: 34vw;
+        font-size: 16px;
     }
 
 
